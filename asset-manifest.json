@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/test_antipoff/static/css/main.b850b8fc.css",
+    "main.js": "/test_antipoff/static/js/main.8ac0f385.js",
+    "static/js/453.dc64214e.chunk.js": "/test_antipoff/static/js/453.dc64214e.chunk.js",
+    "static/media/exit.svg": "/test_antipoff/static/media/exit.e3febb0a52b2929a9f47445fe0a2301d.svg",
+    "static/media/call.svg": "/test_antipoff/static/media/call.49ab2f07dcf42699a44783d936807c90.svg",
+    "static/media/Eye Off.svg": "/test_antipoff/static/media/Eye Off.ea8d0ad12b2b36bfb8bf.svg",
+    "static/media/back.svg": "/test_antipoff/static/media/back.5a125c3696f68cc093f28612f570c963.svg",
+    "index.html": "/test_antipoff/index.html",
+    "static/media/mail.svg": "/test_antipoff/static/media/mail.404b6dc69a7a7d62e728f0d5b60ff0fe.svg",
+    "static/media/Vector.svg": "/test_antipoff/static/media/Vector.061e171d2a52e699ffb3579ec85fbc42.svg",
+    "main.b850b8fc.css.map": "/test_antipoff/static/css/main.b850b8fc.css.map",
+    "main.8ac0f385.js.map": "/test_antipoff/static/js/main.8ac0f385.js.map",
+    "453.dc64214e.chunk.js.map": "/test_antipoff/static/js/453.dc64214e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b850b8fc.css",
+    "static/js/main.8ac0f385.js"
+  ]
+}
