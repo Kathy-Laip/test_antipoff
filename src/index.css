@@ -1,3 +1,9 @@
+:root{
+  --violet: rgba(81, 38, 137, 1);
+  --red: rgba(255, 97, 97, 1);
+  --gray-light: rgba(248, 248, 248, 1);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +11,319 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  box-sizing: border-box;
+}
+
+*{
+  font-weight: 400;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h2{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.text{
+  font-size: 16px;
+}
+
+.text_small{
+  font-size: 14px;
+}
+
+h1{
+  font-size: 64px;
+}
+
+form, 
+form .pasBlock{
+  display: flex;
+  flex-direction: column;
+}
+
+input{
+  border-radius: 8px;
+  border: none;
+
+  padding: 16px;
+
+  background-color: var(--gray-light);
+}
+
+button:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+button:active{
+  opacity: 0.85;
+}
+
+label, 
+input{
+  margin: 10px 0;
+}
+
+input[type='password']{
+  -webkit-text-security: star;
+}
+
+/* ---------- Sign Up Page ---------- */
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100vh;
+}
+
+.cardSignUp{
+  margin: auto;
+
+  width: 40%;
+
+  padding: 16px;
+
+  border-radius: 16px;
+
+  gap: 24px;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.pasBlock{
+  position: relative;
+}
+
+.password-control {
+	position: absolute;
+	top: 60px;
+	right: 20px;
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: url(./pictures/Eye\ Off.svg) 0 0 no-repeat;
+}
+
+.btn{
+  background-color: var(--violet);
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+}
+
+form button{
+  margin-top: 20px;
+}
+
+#exitMobile{
+  position: absolute;
+  right: 80px;
+
+  display: none;
+}
+
+.warning{
+  font-size: 12px;
+  color: red;
+}
+
+#warName,
+#warEmail,
+#warPas,
+#warPasR{
+  display: none;
+}
+
+
+/* ---------- About Page ---------- */
+
+.btn1{
+  background-color: var(--violet);
+  color: white;
+
+  border-radius: 8px;
+  border: 1px solid white;
+
+  padding: 8px 16px;
+}
+
+#headerAbout{
+  background-color: var(--violet);
+  color: white;
+
+  padding-top: 32px;
+  padding-bottom: 64px;
+}
+
+#headerAbout h1, 
+#headerAbout h2{
+  text-align: center;
+}
+
+#headerAbout button{
+  position: absolute;
+  right: 80px;
+}
+
+#headerAbout h2{
+  width: 80%;
+  margin: auto;
+}
+
+#cards{
+  margin: 48px 80px 60px 80px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+
+  gap: 16px;
+}
+
+.cardPerson{
+  box-shadow: 0 1px 4px rgba(51, 51, 51, 0.15);
+
+  border-radius: 10px;
+
+  padding: 50px 100px 66px 100px;
+
+  display: flex;
+  flex-direction: column;
+  
+  position: relative;
+}
+
+.cardPerson .text img{
+  border-radius: 50%;
+
+  width: 125px;
+  height: 125px;
+
+  margin-bottom: 16px;
+}
+
+.like{
+  width: 30px;
+  height: 30px;
+
+  background-color: var(--gray-light);
+
+  border-radius: 4px;
+
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#personalHeader{
+  background-color: var(--violet);
+}
+
+#personalHeader #desk{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 32px 80px;
+}
+
+#personalHeader #mobileNav{
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 32px 80px;
+}
+
+#personBio{
+  display: flex;
+  flex-direction: row;
+
+  color: white;
+
+  margin: -32px 0 0 200px;
+  padding-bottom: 40px;
+
+  width: 60%;
+}
+
+#personBio img{
+  border-radius: 50%;
+
+  width: 190px;
+  height: 190px;
+}
+
+#personBio div{
+  margin-left: 32px;
+}
+
+#personalMain{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin: 50px 200px 100px 200px;
+  gap: 0%;
+}
+
+#personalMain .text{
+  width: 60%;
+}
+
+#personalMain p{
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.infoBioPers{
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.infoBioPers img{
+  padding-right: 20px;
+}
+
+@media (max-width: 1000px){
+  .cardSignUp{
+    width: 100%;
+
+    margin: 10% 0;
+  }
+
+  #exitMobile{
+    display: block;
+  }
+
+  #headerAbout button{
+    display: none;
+  }
+
+  #personalHeader #desk{
+    display: none;
+  }
+
+  #personalHeader #mobileNav{
+    display: flex;
+  }
 }
